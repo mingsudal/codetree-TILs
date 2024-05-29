@@ -1,10 +1,12 @@
-total =0
-count =0
+total = 0
+count = 0
+
 while True:
     n = int(input())
-    if n<30:
-        total +=n
-        count +=1
+    if n < 30:
+        total += n
+        count += 1
     else:
         break
-print("{:.2f}".format(total/count))
+
+print("{:.2f}".format(total / count))
