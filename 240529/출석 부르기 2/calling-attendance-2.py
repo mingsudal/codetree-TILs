@@ -1,4 +1,4 @@
-While True:
+while True:
     n = int(input())
     if n == 1:
         print("John")
