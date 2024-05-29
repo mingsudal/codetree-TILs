@@ -3,10 +3,11 @@ count = 0
 
 while True:
     n = int(input())
-    if n < 30:
+    if n >= 20 and n < 30:
         total += n
         count += 1
     else:
         break
 
-print("{:.2f}".format(total / count))
+if count != 0:
+    print("{:.2f}".format(total / count))
