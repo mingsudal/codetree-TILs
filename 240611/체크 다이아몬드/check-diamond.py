@@ -1,14 +1,13 @@
 n=int(input())
 for i in range(n):
-    for _ in range(n-i):
+    for _ in range(n-i-1):
         print(" ",end="")
     for _ in range(i+1):
         print("*",end=" ")
     print()
-
-for i in range(n):
+for i in range(n-1, 0, -1):
+    for _ in range(n-i, -1, -2):
+        print(" ", end = "")
     for _ in range(i):
-        print("n",end="")
-    for _ in range(i-1):
-        print("*",end=" ")
+        print("*", end = " ")
     print()
