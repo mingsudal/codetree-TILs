@@ -1,11 +1,15 @@
-n=int(input())
+n = int(input())
+
 for i in range(n):
+# i가 첫째 줄인 경우 모두 * 넣어줌
     if i == 0:
-        # 첫 번째 줄은 별을 n개 출력
-        print(' '.join(['*'] * n))
+        for _ in range(n):
+            print("*", end = " ")
     else:
-        # 그 외 줄은 간격에 따라 별을 출력
-        line = [' '] * (n + (n - 1))
-        for j in range(i, len(line), (i + 1) * 2):
-            line[j] = '*'
-        print(' '.join(line))
+# 아닌 경우 j 규칙도 확인 
+        for j in range(n):
+            if j % 2 == 1 and j >= i:
+                print("*", end = " ")
+            else:
+                print(" ", end = " ")
+    print()
