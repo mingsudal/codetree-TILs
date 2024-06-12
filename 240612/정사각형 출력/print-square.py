@@ -1,5 +1,5 @@
 n=int(input())
-cnt=0
+cnt=1
 
 for _ in range(n):
 	for _ in range(n):
