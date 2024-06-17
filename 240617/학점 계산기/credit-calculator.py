@@ -11,4 +11,4 @@ if average >=4.0:
 elif average>=3.0:
     print("Good")
 else:
-    print("poor")
+    print("Poor")
