@@ -14,9 +14,9 @@ for num in numbers:
 
 if not found_0:
     for num in numbers:
-        if num % 2 ==0:
-            total_sum = sum(num)
-            count = len(num)
+        if num % 2 == 0:
+            total_sum += num
+            count += 1
 
 # 결과 출력
 print(count, total_sum)
