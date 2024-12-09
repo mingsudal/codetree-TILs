@@ -1,4 +1,5 @@
+import re
 a=str(input())
 b=str(input())
-count = a.count(b)
+count = len(re.findall(f"(?={re.escape(b)})", a))
 print(count)
